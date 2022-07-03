@@ -1,6 +1,6 @@
 import { UserCredential, JwtAuthResult } from '../../interfaces';
 import { LoginHandler, JwtLoginHandler } from '../interfaces';
-import { checkCredential } from '../services/sequelize';
+import { checkCredential } from '../services';
 import { generateAuthToken } from '../services/jwt';
 import { User } from '../../../user/models/sequelize/interfaces';
 import { findByUsername as findUserByUsername } from '../../../user/find/services/sequelize';
