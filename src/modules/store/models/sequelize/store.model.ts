@@ -36,7 +36,6 @@ export default class StoreModel extends Model<StoreAttributes, Store> {
   @Column(DataType.BOOLEAN)
   status: boolean;
 
-  @AllowNull(false)
   @ForeignKey(() => Setting)
   @Column
   settingId: number;
