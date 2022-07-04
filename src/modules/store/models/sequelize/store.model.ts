@@ -20,7 +20,10 @@ import Setting from '../../../setting/models/sequelize/setting.model';
 })
 export default class StoreModel extends Model<StoreAttributes, Store> {
   @AllowNull(false)
-  @Column(DataType.STRING)
+  @Column({
+    type: DataType.STRING,
+    unique: true,
+  })
   name: string;
 
   @AllowNull(false)
