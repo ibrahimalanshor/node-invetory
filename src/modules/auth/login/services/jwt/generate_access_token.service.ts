@@ -10,7 +10,7 @@ export default async (
       id: userPayload.id,
       username: userPayload.username,
       role: userPayload.role,
-      store: userPayload.store,
+      store: userPayload.storeId,
     },
     key,
     {
